@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "posts",
+  "version": "1.0.0",
+  "description": "Post Feed Plugin",
+  "main": "plugin.js",
+  "keywords": [
+    "posts"
+  ],
+  "author": "Daniel Martinez",
+  "license": "MIT"
+}
