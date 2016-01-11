@@ -12,90 +12,81 @@
       "clean": {},
       "exclude": false,
       "schema": {
-        "id": {
-        "tag": "input",
-        "type": "text",
-        "active": true,
-        "text": "id",
-        "name": "id",
-        "required": false,
-        "disabled": true
-        },
         "author": {
-        "tag": "input",
-        "type": "text",
-        "active": true,
-        "text": "Author",
-        "name": "author",
-        "placeholder": "User Author",
-        "required": true,
-        "autofocus": true
+          "tag": "input",
+          "type": "text",
+          "active": true,
+          "text": "Author",
+          "name": "author",
+          "placeholder": "Author",
+          "required": true,
+          "autofocus": true
         },
-      "content": {
-      "tag": "textarea",
-      "type": "text",
-      "active": true,
-      "text": "content",
-      "name": "content",
-      "readonly": true
-      },
-      "date": {
-      "tag": "input",
-      "type": "datetime",
-      "active": true,
-      "text": "Date",
-      "name": "date",
-      "placeholder": "Date Time",
-      "required": true
-      },
-      "image": {
-      "tag": "input",
-      "type": "image",
-      "active": true,
-      "text": "Iimage",
-      "name": "image",
-      "src": "",
-      "placeholder": "",
-      "required": false
-      },
-      "order": {
-      "tag": "input",
-      "type": "number",
-      "active": true,
-      "text": "Order",
-      "name": "order",
-      "required": true,
-      "min": 0,
-      "placeholder": "Order"
-      },
-      "profile": {
-      "tag": "input",
-      "type": "url",
-      "active": true,
-      "text": "Profile",
-      "name": "profile",
-      "placeholder": "Profile URL",
-      "required": true
-      },
-      "subtitle": {
-      "tag": "input",
-      "type": "text",
-      "active": true,
-      "text": "Subtitle",
-      "name": "subtitle",
-      "placeholder": "Post Subtitle",
-      "required": true
-      },
-      "title": {
-      "tag": "input",
-      "type": "text",
-      "active": true,
-      "text": "Title",
-      "name": "title",
-      "placeholder": "Post Title",
-      "required": true
+        "content": {
+          "tag": "textarea",
+          "type": "text",
+          "active": true,
+          "text": "Content",
+          "name": "content",
+          "placeholder": "This is an array with objects. Images, links, paragraphs.",
+          "class": "form-control",
+          "readonly": true
+        },
+        "date": {
+          "tag": "input",
+          "type": "datetime",
+          "active": true,
+          "text": "Date",
+          "name": "date",
+          "placeholder": "Creation Date",
+          "required": true
+        },
+        "image": {
+          "tag": "image",
+          "active": true,
+          "text": "Image",
+          "name": "image",
+          "placeholder": "Background Image",
+          "required": false
+        },
+        "order": {
+          "tag": "input",
+          "type": "number",
+          "active": true,
+          "text": "Order",
+          "name": "order",
+          "required": true,
+          "min": 0,
+          "placeholder": "Order"
+        },
+        "profile": {
+          "tag": "input",
+          "type": "url",
+          "active": true,
+          "text": "Profile",
+          "name": "profile",
+          "placeholder": "Profile URL",
+          "required": true
+        },
+        "subtitle": {
+          "tag": "input",
+          "type": "text",
+          "active": true,
+          "text": "Subtitle",
+          "name": "subtitle",
+          "placeholder": "Subtitle",
+          "required": true
+        },
+        "title": {
+          "tag": "input",
+          "type": "text",
+          "active": true,
+          "text": "Title",
+          "name": "title",
+          "placeholder": "Title",
+          "required": true
+        }
       }
     }
-  }
   }
 }
