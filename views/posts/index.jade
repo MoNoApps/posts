@@ -1,4 +1,10 @@
 include ../../../../views/layouts/app
   include ../../../../views/index/head
   include ../../../../views/index/body
-
+  body.ng-cloak
+  include ../../../../views/layouts/navbar
+  .container
+    include ../../../../views/index/home
+    include ../../../../views/index/resources
+  include ../../../../views/index/footer
+  include scripts
