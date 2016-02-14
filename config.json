@@ -28,9 +28,8 @@
           "active": true,
           "text": "Content",
           "name": "content",
-          "placeholder": "This is an array with objects. Images, links, paragraphs.",
-          "class": "form-control",
-          "readonly": true
+          "placeholder": "Write Markdown with confidence",
+          "class": "form-control"
         },
         "date": {
           "tag": "input",
