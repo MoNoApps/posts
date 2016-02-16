@@ -1,4 +1,9 @@
+.post {
+  padding: 15px;
+}
+
 .post-title {
+  font-weight: lighter;
   font-size: 36px;
 }
 .post-subtitle {

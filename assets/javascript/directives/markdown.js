@@ -15,13 +15,17 @@
   }
 
   var template = 
-'<div>' + 
-  '<a href="/posts/{{item._id}}">' +
+'<div class=" post col-xs-12 col-sm-12 col-md-12 col-lg-12">' + 
+  '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">' +
+    '<img ng-src="{{item.image}}" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">' +
+  '</div>' +
+  '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">' +
     '<h2 class="post-title">{{item.title}}</h2>' +
-  '</a>' +
-  '<h3 class="post-subtitle">{{item.subtitle}}</h3>' +
-  '<p class="post-info">Posted by <a href="{{item.profile}}">{{item.author}}</a> on {{item.date}}</p>' +
-  '<div class="post-content"></div>' +
+    '<h3 class="post-subtitle">{{item.subtitle}}</h3>' +
+    '<p class="post-info">Posted by <a href="{{item.profile}}">{{item.author}}</a> on {{item.date}}</p>' +
+    '<div class="post-content"></div>' +
+    '<a href="/posts/{{item._id}}">See full post</a>' +
+  '</div>' +
 '</div>';
 
   function markdown () {
