@@ -4,7 +4,9 @@ include ../../../../views/layouts/app
   include ../../../../views/layouts/navbar
   .container
     include ../../../../views/index/sections/home
-      #mdeditor
     include ../../../../views/index/sections/resources
+    div(ng-controller="PostsCtrl")
+      .row(ng-repeat="item in items")
+        markdown(item="{{item}}")
   include ../../../../views/layouts/footer
   include scripts

@@ -12,6 +12,24 @@
       "clean": {},
       "exclude": false,
       "schema": {
+        "title": {
+          "tag": "input",
+          "type": "text",
+          "active": true,
+          "text": "Title",
+          "name": "title",
+          "placeholder": "Title",
+          "required": true
+        },
+        "subtitle": {
+          "tag": "input",
+          "type": "text",
+          "active": true,
+          "text": "Subtitle",
+          "name": "subtitle",
+          "placeholder": "Subtitle",
+          "required": true
+        },
         "author": {
           "tag": "input",
           "type": "text",
@@ -22,13 +40,31 @@
           "required": true,
           "autofocus": true
         },
+        "profile": {
+          "tag": "input",
+          "type": "url",
+          "active": true,
+          "text": "Profile",
+          "name": "profile",
+          "placeholder": "Profile URL",
+          "required": true
+        },
+        "summary": {
+          "tag": "textarea",
+          "type": "text",
+          "active": true,
+          "text": "Summary",
+          "name": "summary",
+          "placeholder": "Markdown Summary",
+          "class": "form-control"
+        },
         "content": {
           "tag": "textarea",
           "type": "text",
           "active": true,
           "text": "Content",
           "name": "content",
-          "placeholder": "Write Markdown with confidence",
+          "placeholder": "Markdown Content",
           "class": "form-control"
         },
         "date": {
@@ -57,33 +93,6 @@
           "required": true,
           "min": 0,
           "placeholder": "Order"
-        },
-        "profile": {
-          "tag": "input",
-          "type": "url",
-          "active": true,
-          "text": "Profile",
-          "name": "profile",
-          "placeholder": "Profile URL",
-          "required": true
-        },
-        "subtitle": {
-          "tag": "input",
-          "type": "text",
-          "active": true,
-          "text": "Subtitle",
-          "name": "subtitle",
-          "placeholder": "Subtitle",
-          "required": true
-        },
-        "title": {
-          "tag": "input",
-          "type": "text",
-          "active": true,
-          "text": "Title",
-          "name": "title",
-          "placeholder": "Title",
-          "required": true
         }
       }
     }
