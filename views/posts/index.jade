@@ -5,8 +5,9 @@ include ../../../../views/layouts/app
   .container
     include ../../../../views/index/sections/home
     include ../../../../views/index/sections/resources
-  .post-feed(ng-controller="PostsCtrl")
-    .row(ng-repeat="item in items")
-      markdown(item="{{item}}")
+    .post-feed(ng-controller="PostsCtrl")
+      .row
+        .item(ng-repeat="item in items")
+          markdown(item="{{item}}")
   include ../../../../views/layouts/footer
   include scripts
