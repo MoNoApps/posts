@@ -1,0 +1,20 @@
+.post.col-xs-12.col-sm-12.col-md-12.col-lg-6
+  div
+    h2.post-title {{item.title}}
+    h3.post-subtitle(ng-show="item.more") {{item.subtitle}}
+    p.post-info
+      | Posted by
+      a(href="{{item.profile}}"){{item.author}}
+      | on {{item.date}}
+    .post-summary(ng-show="item.more")
+    .post-content(ng-show="item.more")
+    a.btn.btn-primary.col-md-3(ng-show="!item.more", ng-click="item.toggle()", href="")
+      i.fa.fa-angle-down.fa-3x
+    a.btn.btn-primary.col-md-3(ng-show="item.more", ng-click="item.toggle()", href="")
+      i.fa.fa-angle-up.fa-3x
+    a.btn.btn-primary.col-md-3(href="")
+      i.fa.fa-share-alt.fa-3x
+    a.btn.btn-success.col-md-3(href="/posts/{{item._id}}")
+      i.fa.fa-edit.fa-3x
+    a.btn.btn-danger.col-md-3(ng-click="item.disable()", href="")
+      i.fa.fa-trash.fa-3x

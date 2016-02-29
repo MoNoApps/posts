@@ -14,28 +14,10 @@
     }
   }
 
-  var template = 
-'<div class=" post col-xs-12 col-sm-12 col-md-12 col-lg-6">' + 
-  '<div">' +
-    '<h2 class="post-title">{{item.title}}</h2>' +
-    '<h3 class="post-subtitle">{{item.subtitle}}</h3>' +
-    '<p class="post-info">Posted by <a href="{{item.profile}}">{{item.author}}</a> on {{item.date}}</p>' +
-    '<div ng-show="item.more" class="post-summary"></div>' +
-    '<div ng-show="item.more" class="post-content"></div>' +
-    '<a ng-show="!item.more" ng-click="item.toggle()" href="" class="btn btn-primary col-md-3">' +
-      '<i class="fa fa-angle-down fa-3x"></i></a>' +
-    '<a ng-show="item.more" ng-click="item.toggle()" "href="" class="btn btn-primary col-md-3">' +
-      '<i class="fa fa-angle-up fa-3x"></i></a>' +
-    '<a href="" class="btn btn-primary col-md-3"><i class="fa fa-share-alt fa-3x"></i></a>' +
-    '<a href="/posts/{{item._id}}" class="btn btn-success col-md-3"><i class="fa fa-edit fa-3x"></i></a>' +
-    '<a ng-click="item.disable()" href="" class="btn btn-danger col-md-3"><i class="fa fa-trash fa-3x"></i></a>' +
-  '</div>' +
-'</div>';
-
   function markdown () {
     return {
       restrict: 'E',
-      template: template,
+      templateUrl: '/templates/markdown',
       link: link
     }; 
 
