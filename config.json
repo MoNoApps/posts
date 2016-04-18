@@ -7,7 +7,7 @@
     "posts": {
       "desc": "posts",
       "collection": "posts",
-      "admin": false,
+      "admin": true,
       "param": "post",
       "clean": {},
       "exclude": false,
