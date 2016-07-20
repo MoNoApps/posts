@@ -1,4 +1,12 @@
-var api = { GET: {}, POST: {} };
+var api = {
+  GET: [
+    {
+      route: 'posts',
+      fn: require('./api/posts')
+    }
+  ],
+  POST: [ ]
+};
 var web = {};
 var sio = {};
 var tests = {};

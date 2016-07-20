@@ -5,7 +5,7 @@
 
   function controller ($scope, $http) {
     $scope.items = [];
-    $http.get('/api/posts')
+    $http.get('/api/posts/posts')
     .then( processPosts )
     .catch( console.log );   
 

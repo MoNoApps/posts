@@ -2,12 +2,10 @@ include ../../../../views/layouts/app
   include ../../../../views/index/head
   body.ng-cloak
   include ../../../../views/layouts/navbar
+    include ../../../../views/layouts/modal/item
   .container
-    include ../../../../views/index/sections/home
-    include ../../../../views/index/sections/resources
-    .post-feed(ng-controller="PostsCtrl")
-      .row
-        .item(ng-repeat="item in items")
-          markdown(item="{{item}}")
+    .post-feed.container-fluid(ng-controller="PostsCtrl")
+      markdown(ng-repeat="item in items")
+    include ../../../../views/layouts/modal/dialog
   include ../../../../views/layouts/footer
   include scripts
